@@ -7,9 +7,9 @@ import java.util.Scanner;
 public class Tester {
     public static void main(String[] args) {
         Menu[] food = {
-                new Beef(),  new Cheese(), new Coke(), new Chicken(),
+                new Beef(),  new CheesePork(), new Coke(), new Chicken(),
                 new Fish(), new FrenchFries(),  new HotSpringEgg(),
-                new Pork(), new Salmon(),  new Tempura()
+                new Pork(), new Salmon(),  new Shrimp()
 
         };
         Scanner scan = new Scanner(System.in);

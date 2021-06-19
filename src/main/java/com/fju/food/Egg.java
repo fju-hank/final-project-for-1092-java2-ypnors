@@ -1,8 +1,8 @@
 package com.fju.food;
 
-public class Egg extends   Menu{
+public class Egg extends Menu{
     public Egg(){
-        id = "l";
+        id = "e";
     }
 
     @Override
@@ -12,6 +12,6 @@ public class Egg extends   Menu{
 
     @Override
     public int price() {
-        return 25;
+        return 30;
     }
 }

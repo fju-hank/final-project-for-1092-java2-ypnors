@@ -1,17 +1,16 @@
 package com.fju.food;
-
-public class Mix extends Menu{
-    public Mix(){
-        id = "c";
+public class Shrimp extends Menu{
+    public Shrimp(){
+        id = "i";
     }
 
     @Override
     public String getName() {
-        return "綜合生魚片";
+        return "天婦羅";
     }
 
     @Override
     public int price() {
-        return 250;
+        return 50;
     }
 }

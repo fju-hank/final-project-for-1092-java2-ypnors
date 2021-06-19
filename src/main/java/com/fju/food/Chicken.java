@@ -2,7 +2,7 @@ package com.fju.food;
 
 public class Chicken extends Menu{
     public Chicken(){
-        id = "d";
+        id = "c";
     }
 
     @Override

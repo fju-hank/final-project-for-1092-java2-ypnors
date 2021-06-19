@@ -1,7 +1,7 @@
 package com.fju.food;
 public class HotSpringEgg extends Menu{
     public HotSpringEgg(){
-        id = "k";
+        id = "h";
     }
 
     @Override

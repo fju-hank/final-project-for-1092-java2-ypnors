@@ -1,7 +1,7 @@
 package com.fju.food;
 public class FrenchFries extends Menu{
     public FrenchFries(){
-        id = "o";
+        id = "g";
     }
 
     @Override

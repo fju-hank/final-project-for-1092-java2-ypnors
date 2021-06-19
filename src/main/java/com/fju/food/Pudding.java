@@ -2,7 +2,7 @@ package com.fju.food;
 
 public class Pudding extends Menu{
     public Pudding(){
-        id = "t";
+        id = "k";
     }
 
     @Override

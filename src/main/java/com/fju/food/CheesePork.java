@@ -1,8 +1,8 @@
 package com.fju.food;
 
-public class Cheese extends Menu{
-    public Cheese(){
-        id = "f";
+public class CheesePork extends Menu{
+    public CheesePork(){
+        id = "b";
     }
 
     @Override

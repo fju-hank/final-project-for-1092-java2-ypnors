@@ -2,7 +2,7 @@ package com.fju.food;
 
 public class Beef extends Menu{
     public Beef(){
-        id = "h";
+        id = "a";
     }
 
     @Override
