@@ -1,55 +1,40 @@
 package com.fju;
 
-public class Tester {
-    public  static  void  main(String[] args)
-    {
-        int i,j,x;
-        int[] dcard=new int[52];	//用來記錄該位牌是否已被發出
-        int num=5;
-        int A,B;
-        Random randomG=new Random();
-        player p[];
-        p=new player[4];//定義四家玩家,配置空間給陣列
-        p[0]=new p21a(); //為每個元素配置物件
-        p[1]=new p21b(); //為每個元素配置物件
-        p[2]=new p21a(); //為每個元素配置物件
-        p[3]=new p21b(); //為每個元素配置物件
-//---------------起始值設定------
-        for (i=0;i<=51;i=i+1)
-            dcard[i]=0;
 
-//-------------由電腦亂數發牌------
-        for (j=0;j<num;j=j+1)  //最多發5張就可以過5關了
-            for (i=0;i<4;i=i+1) //發給一家
-            {
-                x=randomG.nextInt(52);
-                while (dcard[x]!=0) x=randomG.nextInt(52);
-                if (p[i].isgo())
-                {
-                    p[i].set_card(x);
-                    card[x]=1;
-                    System.out.print("第 "+(i+1)+" 家要牌得到：");
-                    System.out.println(p[i].show(j)+"  目前"+p[i].get_card_value()+"點");
+import com.fju.food.*;
+import java.util.Scanner;
+
+public class Tester {
+    public static void main(String[] args) {
+        Menu[] food = {
+                new Beef(),  new Cheese(), new Coke(), new Chicken(),
+                new Fish(), new FrenchFries(),  new HotSpringEgg(),
+                new Pork(), new Salmon(),  new Tempura()
+
+        };
+        Scanner scan = new Scanner(System.in);
+        String input = null;
+        int end = -1;
+        int sum = 0;
+        ReadFile readFile = new ReadFile();
+        readFile.print();
+        System.out.println();
+        System.out.println("今天想吃甚麼?  如果想結束點餐請輸入end");
+        do{
+            input = scan.next();
+            for (Menu order : food) {
+                if (order.name(input)) {
+                    System.out.println(order.getName() + "\t" + order.price());
+                    sum = sum + order.price();
+
                 }
-                else System.out.println("第 "+(i+1)+" 家不要牌了");
+                else if(input.equals("end")){
+                    System.out.println("總額:" + sum);
+                    end = 0;
+                }
+
             }
-//秀出最後結果
-        System.out.println("========================最後的結果====================");
-        for (i=0;i<4;i=i+1)
-        {
-            num=p[i].card_num();//取得真正的牌數
-            System.out.print("第 "+(i+1)+" 家的牌：");
-            for (j=0;j<num;j=j+1)
-            {
-                System.out.print(p[i].show(j)+"  ");
-            }
-            if (p[i].get_card_value() > 21)
-                System.out.println("積點是"+p[i].get_card_value()+"點!爆了！");
-            else
-            {
-                if (num>=5) System.out.print("喔！過五關囉！ ");
-                System.out.println("積點是"+p[i].get_card_value()+"點");
-            }
-        }
+
+        }while (end != 0);
     }
 }
