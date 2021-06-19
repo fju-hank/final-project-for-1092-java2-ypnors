@@ -1,12 +1,12 @@
 package com.fju.food;
 public class Shrimp extends Menu{
     public Shrimp(){
-        id = "i";
+        id = "m";
     }
 
     @Override
     public String getName() {
-        return "天婦羅";
+        return "炸蝦天婦羅";
     }
 
     @Override

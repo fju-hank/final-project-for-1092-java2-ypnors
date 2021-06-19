@@ -2,7 +2,7 @@ package com.fju.food;
 
 public class Sashimi extends Menu{
     public Sashimi(){
-        id = "i";
+        id = "l";
     }
 
     @Override

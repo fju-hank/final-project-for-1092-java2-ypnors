@@ -2,12 +2,12 @@ package com.fju.food;
 
 public class Pudding extends Menu{
     public Pudding(){
-        id = "k";
+        id = "j";
     }
 
     @Override
     public String getName() {
-        return "抹茶布丁";
+        return "布丁";
     }
 
     @Override

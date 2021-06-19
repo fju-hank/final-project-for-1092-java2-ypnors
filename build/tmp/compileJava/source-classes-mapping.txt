@@ -6,27 +6,27 @@ com/fju/ReadFile.java
  com.fju.ReadFile
 com/fju/food/Menu.java
  com.fju.food.Menu
-com/fju/food/Sashimi.java
- com.fju.food.Sashimi
+com/fju/food/CheesePork.java
+ com.fju.food.CheesePork
 com/fju/food/FrenchFries.java
  com.fju.food.FrenchFries
 com/fju/food/Fish.java
  com.fju.food.Fish
 com/fju/food/Chicken.java
  com.fju.food.Chicken
-com/fju/food/Salmon.java
- com.fju.food.Salmon
-com/fju/food/Beef.java
- com.fju.food.Beef
-com/fju/food/Pork.java
- com.fju.food.Pork
-com/fju/food/Pudding.java
- com.fju.food.Pudding
-com/fju/food/Shrimp.java
- com.fju.food.Shrimp
-com/fju/food/CheesePork.java
- com.fju.food.CheesePork
-com/fju/Tester.java
- com.fju.Tester
 com/fju/food/Egg.java
  com.fju.food.Egg
+com/fju/food/Beef.java
+ com.fju.food.Beef
+com/fju/food/Shrimp.java
+ com.fju.food.Shrimp
+com/fju/food/Salmon.java
+ com.fju.food.Salmon
+com/fju/Tester.java
+ com.fju.Tester
+com/fju/food/Pudding.java
+ com.fju.food.Pudding
+com/fju/food/Pork.java
+ com.fju.food.Pork
+com/fju/food/Sashimi.java
+ com.fju.food.Sashimi
